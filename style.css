@@ -1,0 +1,63 @@
+.game {
+  width: 600px;
+  height: 200px;
+  border-bottom: 2px solid #000;
+  margin: auto;
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url(https://i.ibb.co/pWrSwxM/kisspng-tyrannosaurus-t-shirt-dino-t-rex-runner-2-lonely-t-8-bit-5ac1f4e6ee15e6-32159797152266058297.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 151px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image:url(https://i.ibb.co/0JT7YHv/designpb-003.webp);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMove 1.2s infinite linear;
+    -webkit-animation: cactusMove 1.2s infinite linear;
+}
+
+@keyframes cactusMove {
+  0% {
+    left: 580px;
+  }
+   100% {
+    left: -20px;
+   }
+}
+
+.jump {
+  animation: jump 0.7s linear;
+  -webkit-animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 130px;
+  }
+  50% {
+    top: 80px;
+  }
+  80% {
+    top: 110px;
+  }
+  90% {
+    top: 130px
+  }
+  100% {
+    top: 150px;
+  }
+
+}
